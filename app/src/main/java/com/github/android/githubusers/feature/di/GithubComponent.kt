@@ -49,6 +49,6 @@ class RepoModule{
 
     @Provides
     @GithubScope
-    fun postService(retrofit: Retrofit): GithubService = retrofit.create(GithubService::class.java)
+    fun githubService(retrofit: Retrofit): GithubService = retrofit.create(GithubService::class.java)
 
 }
